@@ -1,25 +1,56 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <link rel="stylesheet" type="text/css" href="index.css">
     </head>
     <body>
         <h1>
             未来这里将会是203的官方站点！
         </h1>
-        <br>
-        <br>
-            <p>
-                <a href="./members/gongzheng.html">成员-弓正</a>
-            </p>
-        <br>
-        <br>
-        <br>
-        <h5>
-            现在啥也没有，可以先看看
-            <a href="http://gzblog.top">
-                我的个人博客
-            </a>
-        </h5>
+        <div class="drow" style="height:40px;width:1198px;box-shadow:1px 1px 2px 2px #999999;margin-bottom:10px;">
+            <div class="dcol" style="width:1000px;">
+                <div class="topmenuo">
+                    <ul class="topmenuo1">
+                        <li class="topmenuo3">
+                            <a style="width:150px;">&nbsp;首&nbsp;页&nbsp;</a>
+                        </li>
+                        <li class="topmenuo3">
+                            <a style="width:150px;">&nbsp;新&nbsp;闻&nbsp;</a>
+                        </li>
+                        <li class="topmenuo3">
+                            <a style="width:150px;" onclick="displaymembersul()">&nbsp;成&nbsp;员&nbsp;</a>
+                            <ul id="topmenumembers" class="topmenuo2" style="display: none;">
+                                <li>
+                                    <a >坩锅花菜</a>                                    
+                                </li>
+                                <li>
+                                    <a >米饭好好吃</a>
+                                </li>
+                                <li>
+                                    <a href="./members/gongzheng.html">弓正Anna</a>
+                                </li>
+                                <li>
+                                    <a >the浩</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="topmenuo3">
+                            <a style="width: 150px;">&nbsp;友&nbsp;链&nbsp;</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script>
+            function displaymembersul(){
+                var memberbutton = document.getElementById("topmenumembers")
+                if(memberbutton.style.display=="none"){
+                    memberbutton.style.display="block";
+                }
+                else{
+                    memberbutton.style.display="none";
+                }
+            }
+        </script>
     </body>
 </html>
